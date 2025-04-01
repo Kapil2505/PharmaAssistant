@@ -1,0 +1,23 @@
+curl -X POST "http://localhost:8080/api/batches" \
+-H "Content-Type: application/json" \
+-d '{
+    "batchCode": "BTC-1234",
+    "medicineCode": "MC-300",
+    "weight": 600,
+    "price": 1000.00,
+    "medicineTypeCode": "T",
+    "refrigerationRequired": false
+}'
+
+
+{
+    "batchCode": "BTC-1234",
+    "medicineCode": "MC-300",
+    "weight": 600,
+    "price": 1000.00,
+    "medicineTypeCode": "T",
+    "shippingCharge": 500.00,
+    "careLevel": "High",
+    "refrigerationRequired": false,
+    "message": "Batch Successfully Added in the System"
+}
